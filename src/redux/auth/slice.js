@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import authOperations from './authOperations'; // ✅ імпортуємо весь об'єкт
+import authOperations from './operations'; // ✅ імпортуємо весь об'єкт
 
 const { register, logIn, logOut, refreshUser } = authOperations; // ✅ дістали функції з об'єкта
 

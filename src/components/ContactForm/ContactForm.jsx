@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import contactsOperations from '../../redux/contacts/contactsOperations'; // Імпортуємо весь об'єкт
+import contactsOperations from '../../redux/contacts/operations'; // Імпортуємо весь об'єкт
 import css from './ContactForm.module.css';
 
 export default function ContactForm() {

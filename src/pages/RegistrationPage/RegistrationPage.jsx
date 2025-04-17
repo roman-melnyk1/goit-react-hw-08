@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import authOperations from '../../redux/auth/authOperations'; // Імпортуємо весь об'єкт
+import authOperations from '../../redux/auth/operations'; 
 import css from './RegistrationPage.module.css';
 
 export default function RegisterPage() {
@@ -15,7 +15,7 @@ export default function RegisterPage() {
       password: form.elements.password.value,
     };
 
-    dispatch(authOperations.register(newUser)); // Викликаємо через об'єкт
+    dispatch(authOperations.register(newUser)); 
     form.reset();
   };
 

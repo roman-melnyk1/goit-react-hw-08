@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import contactsSelectors from '../../redux/contacts/contactsSelectors';  // Імпортуємо весь об'єкт
-import contactsOperations from '../../redux/contacts/contactsOperations';  // Імпортуємо все через дефолтний експорт
+import contactsSelectors from '../../redux/contacts/selectors';  // Імпортуємо весь об'єкт
+import contactsOperations from '../../redux/contacts/operations';  // Імпортуємо все через дефолтний експорт
 import css from './ContactsList.module.css';
 
 export default function ContactList() {

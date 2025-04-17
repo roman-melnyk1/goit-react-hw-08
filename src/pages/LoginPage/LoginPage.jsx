@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import authOperations from '../../redux/auth/authOperations'; // Імпортуємо весь об'єкт
+import authOperations from '../../redux/auth/operations'; 
 import css from './LoginPage.module.css';
 
 export default function LoginPage() {
