@@ -1,0 +1,9 @@
+.link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.link.active {
+    font-weight: bold;
+}

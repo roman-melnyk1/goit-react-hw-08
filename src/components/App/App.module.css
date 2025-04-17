@@ -1,0 +1,7 @@
+/* Нехай App має базові стилі — змінюєш під себе */
+.container {
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
