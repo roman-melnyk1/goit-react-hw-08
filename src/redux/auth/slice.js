@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import authOperations from './operations'; // ✅ імпортуємо весь об'єкт
+import authOperations from './operations'; 
 
-const { register, logIn, logOut, refreshUser } = authOperations; // ✅ дістали функції з об'єкта
-
+const { register, logIn, logOut, refreshUser } = authOperations;
 const initialState = {
   user: { name: null, email: null },
   token: null,
@@ -38,6 +37,7 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
         state.isRefreshing = false;
       })
+      
       .addCase(refreshUser.rejected, state => {
         state.isRefreshing = false;
       }),
