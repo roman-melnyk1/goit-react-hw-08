@@ -11,7 +11,7 @@ import ContactsPage from '../../pages/ContactsPage/ContactsPage';
 import PrivateRoute from '../PrivateRoute';
 import RestrictedRoute from '../RestrictedRoute';
 
-import authOperations from '../../redux/auth/operations';  // Імпортуємо дефолтний об'єкт
+import authOperations from '../../redux/auth/operations'; 
 import { selectIsRefreshing } from '../../redux/auth/selectors';
 
 export default function App() {
