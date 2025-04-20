@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 import operations from './operations';
-import authOperations from '../auth/operations'; 
+import authOperations from '../auth/operations';
+
 const { fetchContacts, addContact, deleteContact } = operations;
-const { logOut } = authOperations; 
+const { logOut } = authOperations;
 
 const contactsSlice = createSlice({
   name: 'contacts',
@@ -13,6 +14,7 @@ const contactsSlice = createSlice({
   },
   extraReducers: builder =>
     builder
+
       .addCase(fetchContacts.pending, state => {
         state.loading = true;
       })
@@ -24,14 +26,16 @@ const contactsSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
+
       .addCase(addContact.fulfilled, (state, action) => {
         state.items.push(action.payload);
       })
+
       .addCase(deleteContact.fulfilled, (state, action) => {
-        state.items = state.items.filter(item => item.id !== action.payload.id);
+        state.items = state.items.filter(item => item.id !== action.payload);
       })
+
       .addCase(logOut.fulfilled, state => {
-        // Очистка контактів після logout
         state.items = [];
         state.loading = false;
         state.error = null;
